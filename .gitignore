@@ -1,0 +1,117 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ===== LARGE FILES (GitHub limit 100MB) =====
+# Vector database (FAISS index ~134MB)
+models/vector_db/
+*.index
+*.faiss
+
+# Model files
+models/*.bin
+models/*.safetensors
+models/*.pt
+models/*.onnx
+models/*.pkl
+*.pkl
+
+# Fine-tuned models
+models/qwen2vl-*/
+
+# ===== DATA FILES =====
+# Raw data folders - IGNORE ALL
+data/raw/
+
+# Large JSON files - IGNORE ALL
+data/knowledge_base.json
+data/vqa_train.json
+data/vqa_preprocessed.json
+data/vqa_with_metadata.json
+data/vqa_original.json
+
+# Keep only small essential files
+!data/vqa_test.json
+!data/data-benchmark/benchmark_60.json
+
+# Benchmark images
+data/data-benchmark/benchmark_images/
+
+# LLaMA dataset
+llama-dataset/
+code/finetuning/llama-dataset/
+
+# All images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.webp
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== ARCHIVES =====
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Zone.Identifier (Windows/WSL) - Windows metadata files
+*:Zone.Identifier
+*.Zone.Identifier
+*Zone.Identifier*
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== LOGS =====
+*.log
+logs/
+
+
+# ===== KAGGLE =====
+.kaggle/
+
+# ===== TEMP =====
+*.tmp
+*.temp
+.cache/
+wandb/
+
+# ===== RESULTS =====
+results/*.csv
+results/*.json
+
+# ===== MISC =====
+*.pdf

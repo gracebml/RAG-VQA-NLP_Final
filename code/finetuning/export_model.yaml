@@ -1,0 +1,12 @@
+### Model
+model_name_or_path: Qwen/Qwen2-VL-7B-Instruct
+adapter_name_or_path: /kaggle/working/models/qwen2vl-7b-vqa-grounded
+template: qwen2_vl
+finetuning_type: lora
+trust_remote_code: true
+
+### Export
+export_dir: /kaggle/working/models/qwen2vl-7b-vqa-grounded-merged
+export_size: 2
+export_device: cpu
+export_legacy_format: false

@@ -1,0 +1,89 @@
+# ===========================
+# Core Deep Learning
+# ===========================
+torch>=2.0.0
+transformers>=4.37.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0
+
+# ===========================
+# Vision Language Model
+# ===========================
+qwen-vl-utils>=0.0.8
+# Qwen2-VL dependencies
+av>=10.0.0
+torchvision>=0.15.0
+
+# ===========================
+# RAG & Retrieval
+# ===========================
+# Embedding model for Vietnamese
+sentence-transformers>=2.2.0
+
+# BM25 search
+rank-bm25>=0.2.2
+
+# Vector database
+faiss-cpu>=1.7.4
+# Note: Use faiss-gpu for GPU-accelerated search
+
+# Wikipedia integration
+wikipedia>=1.4.0
+
+# ===========================
+# Vietnamese NLP (Optional)
+# ===========================
+# underthesea>=1.3.0
+# Only needed if using Vietnamese tokenization
+
+# ===========================
+# Evaluation Metrics
+# ===========================
+# BERTScore
+bert-score>=0.3.13
+
+# ROUGE metrics
+rouge-score>=0.1.2
+
+# NLI for faithfulness
+# transformers already installed above
+
+# ===========================
+# Data Processing
+# ===========================
+pillow>=10.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ===========================
+# Utilities
+# ===========================
+tqdm>=4.65.0
+requests>=2.28.0
+
+# ===========================
+# Notebooks & Demo (Optional)
+# ===========================
+jupyter>=1.0.0
+ipykernel>=6.25.0
+# gradio>=4.0.0  # Uncomment if building web demo
+
+# ===========================
+# Fine-tuning (Optional)
+# ===========================
+# LLaMA Factory dependencies (install separately if needed)
+# peft>=0.5.0
+# datasets>=2.14.0
+# trl>=0.7.0
+
+# ===========================
+# Notes:
+# ===========================
+# 1. For GPU acceleration: install faiss-gpu instead of faiss-cpu
+# 2. OCR is handled by Qwen2-VL, no need for PaddleOCR
+# 3. For fine-tuning, install LLaMA Factory separately:
+#    git clone https://github.com/hiyouga/LLaMA-Factory.git
+#    cd LLaMA-Factory && pip install -e .
+# 4. Minimum GPU: 8GB VRAM (with 4-bit quantization)
+# 5. Recommended GPU: 16GB+ VRAM
+
