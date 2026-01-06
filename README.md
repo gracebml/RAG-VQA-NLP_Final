@@ -49,7 +49,7 @@ Xây dựng hệ thống trả lời câu hỏi về lịch sử và văn hóa V
 │                              ▼                                          │
 │                     ┌───────────────┐                                   │
 │                     │   ANSWER      │                                   │
-│                     │ (Vietnamese)  │                                   │
+│                     │               |                                    │
 │                     └───────────────┘                                   │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
@@ -137,7 +137,7 @@ NLP-Final-Prj/
 - Storage: 50GB+ (để tải models)
 
 ### Chạy trên Kaggle
-- Kaggle Notebook với GPU T4/P100 (free)
+- Kaggle Notebook với GPU T4/P100
 - Internet để tải models từ HuggingFace
 
 ## Hướng dẫn Cài đặt và Chạy
@@ -310,7 +310,7 @@ TEMPERATURE = 0.7            # Nhiệt độ sampling (0-1)
 ```python
 from src.vision import VisionModule
 
-vision = VisionModule(model_name="Qwen/Qwen2-VL-7B-Instruct")
+vision = VisionModule(model_name="Qwen/Qwen2-VL-2B-Instruct")
 
 # Generate caption
 caption = vision.generate_caption(image)
@@ -343,7 +343,7 @@ docs = retrieval.retrieve(
 ```python
 from src.answering import AnsweringModule
 
-answering = AnsweringModule(model_name="Qwen/Qwen2-VL-2B-Instruct")
+answering = AnsweringModule(model_name="Qwen/Qwen2-VL-7B-Instruct")
 
 # Generate answer
 answer = answering.generate_answer(
