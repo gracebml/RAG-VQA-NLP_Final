@@ -74,7 +74,7 @@ Xây dựng hệ thống trả lời câu hỏi về lịch sử và văn hóa V
 ```
 NLP-Final-Prj/
 ├── README.md                   # File hướng dẫn này
-│
+│__ KAGGLE_GUIDE.md             # Hướng dẫn chạy trên Kaggle
 ├── code/                       # Mã nguồn
 │   ├── run_demo.py             # Script chạy demo đơn giản (LOCAL)
 │   ├── run_evaluation.py       # Script chạy evaluation (LOCAL)
