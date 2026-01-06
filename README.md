@@ -382,11 +382,11 @@ result = pipeline.process(image, question, return_intermediate=True)
 
 Kết quả trên 60 samples (có sẵn trong `results/`):
 
-| Model | BERTScore F1 | ROUGE-L F1 | Faithfulness |
-|-------|--------------|------------|--------------|
-| Zero-shot (Base) | 0.65 | 0.28 | 0.72 |
-| RAG + Base | 0.71 | 0.34 | 0.78 |
-| RAG + Fine-tuned | 0.76 | 0.42 | 0.82 |
+| Phương pháp | BERTScore | ROUGE-L | Faithfulness |
+|-------------|-----------|---------|--------------|
+| Baseline 1 (Zero-shot) | 0.713 | 0.316 | N/A |
+| Baseline 2 (RAG + Base) | 0.718 | 0.308 | 0.027 |
+| **Proposed (RAG + Fine-tuned)** | **0.738** | **0.357** | **0.029** |
 
 ## Troubleshooting
 
